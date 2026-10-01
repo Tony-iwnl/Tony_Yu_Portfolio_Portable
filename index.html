@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="description" content="3D 场景美术与 Unity 实时场景作品集：山地寺院场景、飞行器方案迭代、个人能力与项目经历。" />
+  <title>3D 场景美术作品集</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23050505'/%3E%3Cpath d='M7 19 16 7l9 12-9 6z' fill='none' stroke='white' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='white'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="返回首页">
+      <span class="mark"></span>
+      <span>PORTFOLIO / 2026</span>
+    </a>
+    <nav aria-label="页面导航">
+      <a href="#works">作品</a>
+      <a href="#breakdown">拆解</a>
+      <a href="#profile">简介</a>
+      <a href="#experience">经历</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-film" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="metadata" poster="./assets/temple-final.webp">
+          <source src="./assets/hero-film.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">3D ENVIRONMENT · REAL-TIME ART</p>
+        <h1 id="hero-title">让空间<br><span>成为叙事。</span></h1>
+        <p class="hero-intro">从 Blender 资产到 Unity HDRP 实时体验，独立完成场景从构想到可运行 Demo 的完整制作。</p>
+      </div>
+
+      <div class="orbit-stage" aria-hidden="true">
+        <div class="ring ring-one"></div>
+        <div class="ring ring-two"></div>
+        <div class="moon"></div>
+        <div class="shard shard-one"></div>
+        <div class="shard shard-two"></div>
+      </div>
+
+      <a class="scroll-cue" href="#works">
+        <span>SCROLL TO EXPLORE</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section class="works section" id="works" aria-labelledby="works-title">
+      <div class="section-heading reveal">
+        <p class="kicker">SELECTED WORK / 01—02</p>
+        <h2 id="works-title">作品与过程</h2>
+        <p>在构图、材质和灯光之间寻找可感知的空间节奏。</p>
+      </div>
+
+      <article class="project project-temple reveal">
+        <figure class="image-frame portrait" tabindex="0" aria-label="山地寺院场景海报，悬停或聚焦渐显彩色">
+          <img src="./assets/temple.webp" alt="山地寺院场景设计推演海报，展示建筑雏形、实地采风、结构深化与最终氛围效果" loading="eager" />
+        </figure>
+        <div class="project-copy">
+          <span class="project-number">01</span>
+          <p class="meta">ENVIRONMENT DESIGN · BLENDER · PBR</p>
+          <h3>山地寺院场景</h3>
+          <p>从建筑原型、实地视觉参考到结构深化，以峡谷天际线与冷雾光影完成场景叙事。</p>
+          <ul>
+            <li>建筑与环境资产制作</li>
+            <li>构图、材质与气氛定稿</li>
+            <li>实时场景表达</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project project-ship reveal">
+        <div class="project-copy">
+          <span class="project-number">02</span>
+          <p class="meta">VEHICLE CONCEPT · ITERATION · SIMULATION</p>
+          <h3>飞行器方案迭代</h3>
+          <p>从比例探索、机械细化到最终形态与模拟验证，以清晰的版本演进呈现设计判断。</p>
+          <ul>
+            <li>硬表面形体探索</li>
+            <li>机械结构与细节迭代</li>
+            <li>最终设计与模拟验证</li>
+          </ul>
+        </div>
+        <figure class="image-frame landscape" tabindex="0" aria-label="飞行器方案迭代海报，悬停或聚焦渐显彩色">
+          <img src="./assets/ship.webp" alt="飞行器从第一版、第二版到最终版的方案迭代海报" loading="lazy" />
+        </figure>
+      </article>
+    </section>
+
+    <section class="breakdown section" id="breakdown" aria-labelledby="breakdown-title">
+      <div class="section-heading reveal">
+        <p class="kicker">VIEWPORT / FINAL</p>
+        <h2 id="breakdown-title">从线框到成片</h2>
+        <p>拖动控制柄，查看结构、材质、灯光与最终氛围之间的变化。</p>
+      </div>
+
+      <article class="comparison-block reveal">
+        <div class="comparison-meta"><span>01 / MOUNTAIN TEMPLE</span><span>WIREFRAME ↔ FINAL</span></div>
+        <div class="compare" role="slider" tabindex="0" aria-label="山地寺院线框与渲染对比" aria-valuemin="0" aria-valuemax="100" aria-valuenow="52">
+          <img class="compare-base" src="./assets/temple-wire.webp" alt="山地寺院线框视图" loading="lazy" />
+          <div class="compare-reveal"><img src="./assets/temple-final.webp" alt="山地寺院最终渲染" loading="lazy" /></div>
+          <div class="compare-line"><button type="button" class="compare-handle" tabindex="-1" aria-hidden="true"><i></i><i></i></button></div>
+          <span class="compare-label before">WIREFRAME</span><span class="compare-label after">FINAL</span>
+        </div>
+      </article>
+
+      <article class="comparison-block reveal">
+        <div class="comparison-meta"><span>02 / FUTURE CITY</span><span>WIREFRAME ↔ FINAL</span></div>
+        <div class="compare" role="slider" tabindex="0" aria-label="未来城市线框与渲染对比" aria-valuemin="0" aria-valuemax="100" aria-valuenow="46">
+          <img class="compare-base" src="./assets/city-wire.webp" alt="未来城市与飞行器线框视图" loading="lazy" />
+          <div class="compare-reveal"><img src="./assets/city-final.webp" alt="未来城市与飞行器最终渲染" loading="lazy" /></div>
+          <div class="compare-line"><button type="button" class="compare-handle" tabindex="-1" aria-hidden="true"><i></i><i></i></button></div>
+          <span class="compare-label before">WIREFRAME</span><span class="compare-label after">FINAL</span>
+        </div>
+      </article>
+
+      <article class="comparison-block reveal">
+        <div class="comparison-meta"><span>03 / ORBITAL TOWER</span><span>WIREFRAME ↔ FINAL</span></div>
+        <div class="compare" role="slider" tabindex="0" aria-label="轨道塔线框与渲染对比" aria-valuemin="0" aria-valuemax="100" aria-valuenow="58">
+          <img class="compare-base" src="./assets/tower-wire.webp" alt="轨道塔线框视图" loading="lazy" />
+          <div class="compare-reveal"><img src="./assets/tower-final.webp" alt="轨道塔最终渲染" loading="lazy" /></div>
+          <div class="compare-line"><button type="button" class="compare-handle" tabindex="-1" aria-hidden="true"><i></i><i></i></button></div>
+          <span class="compare-label before">WIREFRAME</span><span class="compare-label after">FINAL</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="profile section" id="profile" aria-labelledby="profile-title">
+      <div class="profile-lead reveal">
+        <p class="kicker">PROFILE / CAPABILITY</p>
+        <h2 id="profile-title">完整的<br>实时项目制作能力</h2>
+      </div>
+      <div class="profile-body reveal">
+        <p class="statement">可独立完成 Blender 建模、UV、PBR 材质、Unity HDRP 场景搭建、灯光渲染、基础交互、性能优化与 Demo 输出。</p>
+        <p>关注场景构图、材质质感、灯光氛围与最终实时表现，并持续学习 Shader、程序化与 AI 辅助 3D 工作流。</p>
+      </div>
+    </section>
+
+    <section class="skills section" aria-labelledby="skills-title">
+      <div class="section-heading reveal">
+        <p class="kicker">SKILL MATRIX</p>
+        <h2 id="skills-title">技能</h2>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card reveal"><span>01</span><h3>3D / DCC</h3><p>Blender · 建模 · UV · 硬表面 · 场景资产</p></article>
+        <article class="skill-card reveal"><span>02</span><h3>材质</h3><p>Substance 3D Painter · PBR · Normal · AO</p></article>
+        <article class="skill-card reveal"><span>03</span><h3>实时引擎</h3><p>Unity · HDRP · 场景搭建 · 实时渲染 · Demo 输出</p></article>
+        <article class="skill-card reveal"><span>04</span><h3>灯光</h3><p>HDRI · GI · 体积雾 · 后期调色 · 氛围塑造</p></article>
+        <article class="skill-card reveal"><span>05</span><h3>技术</h3><p>基础交互 · Trigger · Shader 基础 · 性能优化</p></article>
+        <article class="skill-card reveal"><span>06</span><h3>视觉</h3><p>Photoshop · 构图 · 展示设计 · AI 辅助工作流</p></article>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading reveal">
+        <p class="kicker">PROJECT EXPERIENCE</p>
+        <h2 id="experience-title">Unity HDRP<br>实时交互展馆</h2>
+      </div>
+      <div class="experience-panel reveal">
+        <div class="experience-topline">
+          <span>个人独立项目</span>
+          <span>END-TO-END WORKFLOW</span>
+        </div>
+        <ol>
+          <li><span>01</span><p>独立完成从 Blender 资产制作到 Unity 实时展示的完整流程。</p></li>
+          <li><span>02</span><p>负责建模、UV、PBR 材质、HDRP 场景搭建、灯光、体积效果与后期调色。</p></li>
+          <li><span>03</span><p>实现第一人称漫游、Trigger 基础交互，并处理 Normal、Z-Fighting、材质与光照问题。</p></li>
+          <li><span>04</span><p>围绕实时运行进行模型、材质与灯光优化，并完成 Windows 可执行 Demo 输出。</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="closing section" aria-labelledby="closing-title">
+      <div class="closing-orb" aria-hidden="true"></div>
+      <p class="kicker reveal">CAREER DIRECTION</p>
+      <h2 id="closing-title" class="reveal">实习 / 3D 场景美术<br>Unity 实时场景 / 游戏场景美术</h2>
+      <p class="closing-note reveal">LOOKING FOR THE NEXT WORLD TO BUILD.</p>
+    </section>
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-heading">
+        <p class="kicker">CONTACT</p>
+        <h2 id="contact-title">联系方式</h2>
+        <p class="contact-name">余思洋 <span>Tony Yu</span></p>
+      </div>
+      <dl class="contact-details">
+        <div><dt>在读专业</dt><dd>数字媒体艺术</dd></div>
+        <div><dt>联系方式</dt><dd><a href="mailto:707279729@qq.com">707279729@qq.com</a></dd></div>
+        <div><dt>所在地</dt><dd>广州</dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <span>3D ENVIRONMENT ART PORTFOLIO</span>
+    <a href="#top">BACK TO TOP</a>
+  </footer>
+
+  <dialog class="lightbox" aria-labelledby="lightbox-title">
+    <div class="lightbox-bar">
+      <p id="lightbox-title"></p>
+      <button type="button" class="close-lightbox" aria-label="关闭大图">关闭</button>
+    </div>
+    <div class="lightbox-scroll"><img src="" alt="" /></div>
+  </dialog>
+
+  <script src="./script.js"></script>
+</body>
+</html>

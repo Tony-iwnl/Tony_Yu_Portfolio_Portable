@@ -1,0 +1,42 @@
+{
+  "entry": "index.html",
+  "missing_local_references": [],
+  "absolute_filesystem_or_root_references": [],
+  "remote_runtime_dependencies": [],
+  "local_references_checked": 12,
+  "secret_or_local_path_pattern_findings": [],
+  "pdf_local_links_removed": 9,
+  "fonts": "System font fallback only; no font files or remote font dependencies.",
+  "embedded_resources": "SVG favicon and CSS texture are embedded data URLs; SVG namespace is not a network dependency.",
+  "public_author_details_retained": true,
+  "browser_validation": {
+    "images_loaded": true,
+    "keyboard_slider": true,
+    "pointer_slider": true,
+    "desktop_js_errors": [],
+    "failed_resources": [],
+    "network_dependencies": [],
+    "mobile_no_horizontal_overflow": true,
+    "color_transition": "6s",
+    "video": {
+      "loaded": true,
+      "error": false
+    }
+  },
+  "sha256": {
+    "assets/city-final.webp": "31f1213a8c1011d89fd0947c82e967010e42826f1777c806b2664740b9b9885c",
+    "assets/city-wire.webp": "de8e9b3be4146cfd94931b929f20ac2a783dcb93599bb05f6c4ea962b58a0cd5",
+    "assets/hero-film.mp4": "45f20bdd2d61c277379447c791c59e8cb9e64c29bd2e37228096f2ab6c13b2c1",
+    "assets/ship.webp": "3c8a11976cd63e36cbba6beb6ed4dcea36fb535697261a39e0f23f3519eda66e",
+    "assets/temple-final.webp": "d6fde20d8ab323fc2b5bf0cfecda7a08c68efc96e70b9c5ff598898c097ec76f",
+    "assets/temple-wire.webp": "b70001cb90cffa65999c0c5ea970a64563c69ba3a4eaa4044fd7b25667e1fceb",
+    "assets/temple.webp": "dfffd2797b3d64918cc64b500d16c1f8792207761f9ef08493a5c6d611064420",
+    "assets/tower-final.webp": "a49b19e50e226f0e843a9ad5a1144d2fb8c813598e60c666276d31b2923197ce",
+    "assets/tower-wire.webp": "51efb125f03fc2705bc894566568c470b86f2fa5e13aec05fd35ae42c736a7da",
+    "documents/Tony_Yu_3D_Portfolio.pdf": "2285ad9e48b1a9e387a838e031be28bbc609dff359d7cd4e09964980514684b3",
+    "index.html": "3ccc16d46640249299792939fa2e5af56d59fb8a96849ef0f620de5e76d0a944",
+    "README.md": "c281e01647062cadf9e3c39092100e8cd326b3552cd6f1ae720dc8512e187bce",
+    "script.js": "7e703b7c920262f5465a706c9ca5d839523c95ded98dfb4e56efdedb31cacf7c",
+    "styles.css": "29b731f2c346babf43457dbaa4701dcd86805bede13ebd9046a935388c799593"
+  }
+}
